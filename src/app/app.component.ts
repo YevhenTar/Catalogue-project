@@ -34,8 +34,4 @@ export class AppComponent {
   replaceValue(itemValue: any){
     return itemValue = itemValue === null ? "it's unknown" : itemValue;
   }
-
-
-
-
 }

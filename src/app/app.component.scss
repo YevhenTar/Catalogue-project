@@ -7,10 +7,17 @@
         justify-content: space-between;
         align-items: center;
         height: 100%;
+        @media(max-width: 991.98px){
+            flex-direction: column;
+        }
         .main-section__block {
             width: 50%;
             position: relative;
             height: 100vh;
+            border: 3px solid #808080;
+            @media(max-width: 991.98px){
+                width: 100%;
+            }
         }
     }
 }
@@ -22,11 +29,21 @@
     justify-content: center;
     align-items: flex-start;
     padding: 15px 0;
+    @media(max-width: 991.98px){
+        height: 30%;
+    }
+    padding: 15px 0;
     .product-list{
         table-layout: fixed;
         border-collapse: collapse;
         border: 2px solid #808080;
         width: 50%;
+        @media(max-width: 767.98px){
+            width: 60%;
+        }
+        @media(max-width: 575.98px){
+            width: 80%;
+        }
         thead{
             border: 1px solid #808080;
             background-color: #808080;
@@ -66,11 +83,30 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 15px 0;
+    @media(max-width: 991.98px){
+        height: 70%;
+    }
+    @media(max-width: 575.98px){
+        padding: 15px 0 35px;
+    }
     .product-info{
         table-layout: fixed;
         border-collapse: collapse;
         border: 2px solid #808080;
         width: 75%;
+        @media(max-width: 1399.98px){
+            width: 85%;
+        }
+        @media(max-width: 991.98px){
+            width: 75%;
+        }
+        @media(max-width: 767.98px){
+            width: 78%;
+        }
+        @media(max-width: 575.98px){
+            width: 92%;
+        }
         td{
             text-align: center;
             border: 1px solid #808080;
@@ -78,14 +114,37 @@
             color: #808080;
             font-weight: 500;
             padding: 5px 10px;
+            @media(max-width: 575.98px){
+                padding: 5px;
+                font-size: 12px;
+            }
             &:first-child{
                 background-color: #808080;
                 color: #fff;
                 font-size: 15px;
                 width: 30%;
+                @media(max-width: 1199.98px){
+                    width: 35%;
+                }
+                @media(max-width: 991.98px){
+                    width: 30%
+                }
+                @media(max-width: 767.98px){
+                    width: 35%;
+                }
+                @media(max-width: 575.98px){
+                    width: 40%;
+                    font-size: 12px;
+                }
             }
             &:last-child{
                 width: 70%;
+                @media(max-width: 1199.98px){
+                    width: 65%;
+                }
+                @media(max-width: 991.98px){
+                    width: 70%;
+                }
             }
         }
     }
@@ -113,7 +172,15 @@
             background-color: transparent;
             color: #000;
         }
+        @media(max-width: 767.98px){
+            font-size: 12px;
+            padding: 5px 10px;
+            bottom: 3px;
+            right: 3px;
+        }
     }
 }
+
+
 
 
